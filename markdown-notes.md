@@ -1,7 +1,13 @@
 # Markdown Notes
 
 Link
-` [Title](URL) `
+
+```
+[Title](URL)
+```
 
 Code
-` `code block` `
+
+```
+` code block `
+```
