@@ -1,0 +1,24 @@
+---
+- name: Install EPEL repository and a set of packages on RHEL 9
+  hosts: localhost
+  become: yes
+  connection: local
+  vars:
+    packages_to_install:
+      - bat
+      - vim
+      - git
+      - wget
+      - curl
+      - fastfetch
+      - btop
+      - tmux
+      - powerline
+      - powerline-fonts
+      - vim-powerline
+      - tmux-powerline
+  tasks:
+    - name: Install packages using dnf
+      ansible.builtin.yum:
+        name: "{{ packages_to_install }}"
+        state: present
