@@ -6,8 +6,14 @@ Link
 [Title](URL)
 ```
 
-Code
+Code Block
 
 ```
 ` code block `
+```
+
+Fenced Code Block
+
+```
+``` code block ```
 ```
